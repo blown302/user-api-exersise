@@ -2,6 +2,5 @@ version: '3'
 services:
   users:
     image: blown302/user-api-demo
-    build: .
     ports:
       - 3000:3000
