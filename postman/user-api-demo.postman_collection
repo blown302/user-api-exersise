@@ -1,0 +1,112 @@
+{
+	"variables": [],
+	"info": {
+		"name": "user-api-demo",
+		"_postman_id": "cf5a5a7d-f4bd-15ad-c551-18dbed6d6154",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ping",
+			"request": {
+				"url": "http://localhost:3000/ping",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "05R9TRJr3Mx$qH",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "health to see if user service is up."
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Users",
+			"request": {
+				"url": "http://localhost:3000/users",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "05R9TRJr3Mx$qH",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "list users"
+			},
+			"response": []
+		},
+		{
+			"name": "User Datasource",
+			"request": {
+				"url": "https://randomuser.me/api",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "05R9TRJr3Mx$qH",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "API to retreive the data used in our proxy"
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"url": "http://localhost:3000/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "05R9TRJr3Mx$qH",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"gender\": \"male\",\n    \"firstname\": \"Doctor\",\n    \"city\": \"San Diego\",\n    \"email\": \"the.doctor@example.com\",\n    \"cell\": \"(555)-555-5555\"\n}"
+				},
+				"description": "Creates a new user"
+			},
+			"response": []
+		},
+		{
+			"name": "Find User by name",
+			"request": {
+				"url": "http://localhost:3000/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "05R9TRJr3Mx$qH",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"gender\": \"male\",\n    \"firstname\": \"Doctor\",\n    \"city\": \"San Diego\",\n    \"email\": \"the.doctor@example.com\",\n    \"cell\": \"(555)-555-5555\"\n}"
+				},
+				"description": "Finds a user by name"
+			},
+			"response": []
+		}
+	]
+}
