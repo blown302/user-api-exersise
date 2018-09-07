@@ -1,0 +1,26 @@
+{
+  "name": "user-api-exersise",
+  "version": "1.0.0",
+  "description": "a demo user api",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blown302/user-api-exersise.git"
+  },
+  "keywords": [
+    "api",
+    "express"
+  ],
+  "author": "Thomas Milas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blown302/user-api-exersise/issues"
+  },
+  "homepage": "https://github.com/blown302/user-api-exersise#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
