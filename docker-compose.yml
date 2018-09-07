@@ -1,0 +1,9 @@
+version: '3'
+services:
+  users:
+    image: blown302/user-api-demo
+    build: .
+    volumes:
+      - ./app:/app
+    ports:
+      - 3000:3000
